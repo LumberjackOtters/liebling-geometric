@@ -49,10 +49,49 @@
     "ghost-theme"
   ],
   "license": "MIT",
-  "name": "liebling",
+  "name": "liebling-geometric",
   "screenshots": {
     "desktop": "assets/screenshot-desktop.jpg",
     "mobile": "assets/screenshot-mobile.jpg"
   },
-  "version": "0.5.3"
+  "version": "0.5.3",
+  "scripts": {
+    "test": "gscan .",
+    "watch:dev": "webpack --watch",
+    "build:dev": "webpack -d",
+    "build:prod": "webpack -p",
+    "zip": "run-script-os",
+    "zip:default": "zip -r liebling.zip ./* -x './src/*' -x 'node_modules'"
+  },
+  "devDependencies": {
+    "ghost-cli": "^1.11.0",
+    "run-script-os": "^1.0.7",
+    "sass": "^1.22.9",
+    "sass-loader": "7.*",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^9.6.5",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "css-vars-ponyfill": "^2.1.2",
+    "cssnano": "^4.1.10",
+    "fitvids": "^2.0.0",
+    "fuse.js": "^3.4.2",
+    "gscan": "^3.0.0",
+    "headroom.js": "^0.10.3",
+    "jquery": "^3.3.1",
+    "medium-zoom": "^1.0.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "promise-polyfill": "8.1.0",
+    "resolve-url-loader": "^3.1.0",
+    "slick-carousel": "^1.8.1",
+    "stickybits": "^3.6.1",
+    "tippy.js": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2"
+  }
 }

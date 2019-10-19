@@ -22,11 +22,14 @@ into the {body} of the default.hbs template --}}
     {{/if}}
   </div>
   </section>
-  
+
   <main>
     <div class="l-content">
       <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
         <div class="l-grid centered">
+          {{#foreach posts limit=2}}
+              {{> "post_card_forward"}}
+          {{/ foreach}}
           {{#get "posts" filter="featured:true" include="authors,tags" limit="5" as |featured|}}
           {{#if featured}}
           <div class="m-featured-slider">
@@ -75,7 +78,9 @@ into the {body} of the default.hbs template --}}
           {{/if}}
           {{/get}}
           {{!-- The tag below iterates over all the posts --}}
-          {{> "loop"}}
+          {{#foreach posts from="3"}}
+            {{> "post_card"}}
+          {{/ foreach}}
         </div>
       </div>
       {{!-- Links to Previous/Next posts --}}

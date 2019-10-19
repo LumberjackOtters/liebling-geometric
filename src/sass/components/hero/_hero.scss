@@ -49,11 +49,29 @@
     opacity: 1;
   }
 }
+.m-hero__picture:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -0.5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8vw 0 0 130vw;
+  border-color: transparent transparent transparent #ffffff;
+  // @include respond-to('medium') {
+  //   border-width: 20vw 0 0 100vw;
+  // }
+}
 
 .m-hero__content {
   position: relative;
   text-align: center;
   padding: 0 $mobile-space;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
   z-index: 2;
 
   @include respond-to('medium') {
