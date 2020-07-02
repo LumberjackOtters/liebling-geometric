@@ -1,8 +1,8 @@
 {
   "author": {
-    "email": "this.eduardo@gmail.com",
-    "name": "Eduardo Gómez",
-    "url": "https://eduardogomez.io"
+    "email": "lalung.alexandre@gmail.com",
+    "name": "Alexandre LALUNG",
+    "url": "https://github.com/PurpleBabar"
   },
   "config": {
     "posts_per_page": 10,
@@ -27,8 +27,8 @@
       }
     }
   },
-  "demo": "https://liebling.eduardogomez.io",
-  "description": "Beautiful and clean theme that is easy and comfortable to use.",
+  "demo": "",
+  "description": "Based on liebling by Eduardo Gomez, just twitched a little",
   "engines": {
     "ghost": ">=2.0.0",
     "ghost-api": "v2"
@@ -61,7 +61,7 @@
     "build:dev": "webpack -d",
     "build:prod": "webpack -p",
     "zip": "run-script-os",
-    "zip:default": "zip -r liebling.zip ./* -x './src/*' -x 'node_modules'"
+    "zip:default": "zip -r liebling.zip ./* -x 'src/*' -x 'node_modules/*'"
   },
   "devDependencies": {
     "ghost-cli": "^1.11.0",
